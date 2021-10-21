@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #d1e8e8, #abc2c2);
+}
+
+nav {
+  background-color: #ffffff;
+}
+
+.nav__center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__header-title {
+  font-size: xx-large;
+  letter-spacing: 1px;
+}
+.nav__header-title .coding {
+  color: #bacbcc;
+  padding: 0 10px;
+}
+.nav__header-title .addict {
+  color: #5dc9cf;
+  padding: 0 10px;
+}
+
+.nav__header-toggle {
+  display: none;
+}
+
+.nav__links {
+  display: flex;
+  padding: 10px;
+  letter-spacing: 4px;
+  height: auto;
+}
+.nav__links li {
+  padding: 10px;
+  list-style: none;
+}
+.nav__links li a {
+  text-decoration: none;
+  font-size: x-large;
+  color: #bacbcc;
+  display: block;
+}
+
+.nav__links li a:hover {
+  background-color: #5dc9cf;
+}
+
+.nav__social-icons {
+  margin-right: 10px;
+  display: flex;
+  list-style: none;
+}
+.nav__social-icons li {
+  padding: 20px;
+  font-size: x-large;
+}
+.nav__social-icons li i {
+  color: #5dc9cf;
+}
+
+.nav__social-icons a i:hover {
+  color: #de9f4e;
+}
+
+.show-links {
+  height: 10rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .nav__social-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #7e8187;
+  }
+}
+@media screen and (max-width: 599px) {
+  .nav__social-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #7e8187;
+  }
+
+  .nav__header-toggle {
+    display: block;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    color: #5dc9cf;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav__header-title {
+    display: flex;
+  }
+
+  .rotate {
+    transform: rotate(90deg);
+  }
+
+  .nav__links a {
+    display: block;
+    padding: 10px;
+  }
+
+  .nav__links a:hover {
+    background-color: #5dc9cf;
+  }
+
+  .nav__links {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    position: absolute;
+    padding: 0;
+    left: 0px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+
+  .nav__show-links {
+    height: 280px;
+  }
+}/*# sourceMappingURL=main.css.map */
